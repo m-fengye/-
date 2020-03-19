@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\87351\Desktop\1</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/WorkDB.mdf">
+      <publishTime>03/11/2020 13:35:38</publishTime>
+    </File>
+    <File Include="App_Data/WorkDB_log.ldf">
+      <publishTime>03/11/2020 13:35:39</publishTime>
+    </File>
+    <File Include="bin/CollectHomework.dll">
+      <publishTime>03/11/2020 13:35:56</publishTime>
+    </File>
+    <File Include="bin/CollectHomework.pdb">
+      <publishTime>03/11/2020 13:35:56</publishTime>
+    </File>
+    <File Include="dist/bs-custom-file-input.js">
+      <publishTime>08/29/2018 13:59:42</publishTime>
+    </File>
+    <File Include="dist/bs-custom-file-input.js.map">
+      <publishTime>08/29/2018 13:59:42</publishTime>
+    </File>
+    <File Include="dist/bs-custom-file-input.min.js">
+      <publishTime>08/29/2018 13:59:42</publishTime>
+    </File>
+    <File Include="dist/bs-custom-file-input.min.js.map">
+      <publishTime>08/29/2018 13:59:42</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>03/11/2020 11:56:41</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>03/09/2020 17:13:02</publishTime>
+    </File>
+    <File Include="loginOut.aspx">
+      <publishTime>03/07/2020 21:30:02</publishTime>
+    </File>
+    <File Include="manager.aspx">
+      <publishTime>03/09/2020 17:12:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/08/2020 13:54:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

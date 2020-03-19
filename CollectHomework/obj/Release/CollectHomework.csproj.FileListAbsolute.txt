@@ -1,0 +1,7 @@
+E:\Project\ASP.NET\CollectHomework\CollectHomework\bin\CollectHomework.dll.config
+E:\Project\ASP.NET\CollectHomework\CollectHomework\bin\CollectHomework.dll
+E:\Project\ASP.NET\CollectHomework\CollectHomework\bin\CollectHomework.pdb
+E:\Project\ASP.NET\CollectHomework\CollectHomework\obj\Release\CollectHomework.csprojAssemblyReference.cache
+E:\Project\ASP.NET\CollectHomework\CollectHomework\obj\Release\CollectHomework.csproj.CoreCompileInputs.cache
+E:\Project\ASP.NET\CollectHomework\CollectHomework\obj\Release\CollectHomework.dll
+E:\Project\ASP.NET\CollectHomework\CollectHomework\obj\Release\CollectHomework.pdb
