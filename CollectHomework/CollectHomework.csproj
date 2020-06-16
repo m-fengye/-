@@ -75,7 +75,11 @@
     </Content>
     <Content Include="dist\bs-custom-file-input.js" />
     <Content Include="dist\bs-custom-file-input.min.js" />
+    <Content Include="filetype.txt" />
+    <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="js\grayscale.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="login.aspx" />
     <Content Include="loginOut.aspx" />
     <Content Include="manager.aspx" />
@@ -85,6 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

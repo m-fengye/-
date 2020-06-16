@@ -1,0 +1,13 @@
+.doc
+.docx
+.txt
+.rar
+.zip
+.png
+.jpg
+.jpeg
+.xls
+.xlsx
+.pdf
+.ppt
+.pptx

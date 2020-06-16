@@ -125,8 +125,14 @@ namespace CollectHomework
                     else if (!isType(fileName))//符合返回true，取反是false，不执行下面内容
                     {
                         //文件类型有误，防止上传木马文件
-                        //如需修改，去isType方法更改数组即可
-                        Response.Write("<script>alert('只允许上传.doc .docx .txt .rar .zip .png .jpg .jpeg .xls .xlsx')</script>");
+                        //如需修改，去filetype.txt文件更改即可
+                        string msg = "<script>alert('只允许上传";
+                        foreach(string type in (string[])Application.Get("types"))
+                        {
+                            msg += " "+type;
+                        }
+                        msg += "')</script>";
+                        Response.Write(msg);
                         return;
                     }
                 }
@@ -193,7 +199,7 @@ namespace CollectHomework
         private bool isType(string fileName)
         {
             string extension = Path.GetExtension(fileName);
-            string[] types = { ".doc", ".docx", ".txt", ".rar", ".zip", ".png", ".jpg", ".jpeg", ".xls", ".xlsx" };
+            string[] types = (string[])Application.Get("types");
             int count = 0;
             foreach (string type in types)
             {

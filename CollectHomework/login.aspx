@@ -10,6 +10,12 @@
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="js/grayscale.js"></script>
+    <script language='javascript' type='text/javascript'>
+        $(function(){
+            grayscale($("html"));
+        });
+    </script>-->
     <title>登陆页</title>
 </head>
 <body style="background-color:#b0d5df">
@@ -17,7 +23,7 @@
         <div class="row mt-5">
             <div class="col-10 col-sm-6 m-auto">
                 <form id="form1" runat="server">
-                    <div class="row" style="background-color:rgba(99,187,208,0.7);border-radius: 20px;">
+                    <div class="row" style="background-color:rgb(99,187,208);border-radius: 20px;">
                         <div class="col-12 col-sm-6 mt-3 mb-3 ml-auto mr-auto">
                             <h2 class="text-center">作业提交系统</h2>
                             <div class="form-group">
@@ -30,7 +36,7 @@
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input id="RememberMe" runat="server" class="form-check-input" type="checkbox" checked="checked"/>
+                                    <input id="RememberMe" runat="server" class="form-check-input" type="checkbox" checked="checked">
                                     下次自动登陆
                                 </label>
                             </div>
@@ -41,8 +47,8 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-10 col-sm-6 m-auto" style="background-color:rgba(99,187,208,0.7);border-radius: 20px;">
-                <p class='text-center m-2'>垃圾小站，请勿测试<br/><a href='http://beian.miit.gov.cn'>冀ICP备XXXXXXXX号</a></p>
+            <div class="col-10 col-sm-6 m-auto" style="background-color:rgb(99,187,208);border-radius: 20px;">
+                <p class='text-center m-2'>垃圾小站，请勿测试</br><a href='http://beian.miit.gov.cn'>冀ICP备18039362号-2</a></p>
             </div>
         </div>
     </div>

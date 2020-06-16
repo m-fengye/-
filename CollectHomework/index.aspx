@@ -11,12 +11,18 @@
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="dist/bs-custom-file-input.js"></script>
+    <!--<script type="text/javascript" src="js/grayscale.js"></script>
+    <script language='javascript' type='text/javascript'>
+        $(function(){
+            grayscale($("html"));
+        });
+    </script>-->
     <title>上传文件</title>
 </head>
 <body style="background-color: #b0d5df">
     <div class="container">
         <div class="row mt-5">
-            <div class="col-10 col-sm-6 m-auto" style="background-color:rgba(99,187,208,0.7);border-radius: 20px;">
+            <div class="col-10 col-sm-6 m-auto" style="background-color:rgb(99,187,208);border-radius: 20px;">
                 <form id="form1" runat="server" method="post" enctype="multipart/form-data">
                     <label class="col-12 mt-4 text-center">你的学号为：
                         <asp:Label ID="lblUserId" runat="server" ></asp:Label>
@@ -34,15 +40,22 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-10 col-sm-6 m-auto" style="background-color:rgba(99,187,208,0.7);border-radius: 20px;">
-                <p class='text-center m-2'>垃圾小站，请勿测试<br/><a href='http://beian.miit.gov.cn'>冀ICP备XXXXXXXX号</a></p>
+            <div class="col-10 col-sm-6 m-auto" style="background-color:rgb(99,187,208);border-radius: 20px;">
+                <p class='text-center m-2 text-danger'>因为没有使用ajax，提交过程会出现卡顿，稍等一下就好啦</br><!-- text-danger-->
+                    文件上传大小调整为10M，别再测试了哥哥姐姐们</br>
+                    <a href='http://beian.miit.gov.cn'>冀ICP备18039362号-2</a></p>
             </div>
         </div>
     </div>
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            //添加选中文件后显示文件名
-            bsCustomFileInput.init();
+	document.addEventListener('DOMContentLoaded', function() {
+			bsCustomFileInput.init()
+
+			var btn = document.getElementById('btnResetForm')
+			var form = document.querySelector('form')
+			btn.addEventListener('click', function () {
+				form.reset()
+			})
 		});
 	</script>
 </body>

